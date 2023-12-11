@@ -1,0 +1,65 @@
+name: doolanan
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  carousel_slider: ^4.2.1
+  google_nav_bar: ^5.0.6
+  flutter:
+    sdk: flutter
+  flutter_screenutil: 5.7.0
+  flutter_svg: ^2.0.9
+  flutter_icon_data: ^0.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - 'semuaAsset/gambar/'
+  - 'semuaAsset\svg\2 UserActive.svg'
+  - 'semuaAsset\svg\2 UserDeactive.svg'
+  - 'semuaAsset\svg\CategoryActive.svg'
+  - 'semuaAsset\svg\CategoryDeactive.svg'
+  - 'semuaAsset\svg\HomeActive.svg'
+  - 'semuaAsset\svg\HomeDeactive.svg'
+  - 'semuaAsset\svg\bloonSvg.svg'
+  - 'semuaAsset\svg\Lock.svg'
+  - 'semuaAsset\svg\Plus.svg'
+  - 'semuaAsset\svg\Search.svg'
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: semuaAsset/font/inter_regular.ttf
+          weight: 400
+        - asset: semuaAsset/font/inter_medium.ttf
+          weight: 500
+        - asset: semuaAsset/font/inter_semibold.ttf
+          weight: 600
+        - asset: semuaAsset/font/inter_bold.ttf
+          weight: 700
+        - asset: semuaAsset/font/inter_extrabold.ttf
+          weight: 800
+        - asset: semuaAsset/font/inter_black.ttf
+          weight: 900
+        - asset: semuaAsset/font/Inter_Thin.ttf
+          weight: 400
+        - asset: semuaAsset/font/Inter_Light.ttf
+          weight: 300
+    
+    - family: Be Vietnam Pro
+      fonts:
+        - asset: semuaAsset/font/BeVietnamPro-Medium.ttf
+    
+    - family: Bebas
+      fonts:
+        - asset: semuaAsset\font\BebasNeue-Regular.ttf

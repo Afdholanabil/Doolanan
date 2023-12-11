@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905816785816",
+    "project_id": "doolanan-233df",
+    "storage_bucket": "doolanan-233df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905816785816:android:35d86eff30699563d3a1ed",
+        "android_client_info": {
+          "package_name": "com.example.doolanan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZts4WZOSL4woIIvDVIF-bke7tCIB8UrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
