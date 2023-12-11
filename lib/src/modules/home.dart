@@ -22,20 +22,74 @@ class _HomePagesState extends State<HomePages> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Expanded(
-                      child: Positioned(
-                    child: Row(
-                      children: [
-                        Expanded(child: Material(
-                          borderRadius: BorderRadius.all(Radius.circular(10)),
-                          child: InkWell(
-                            
+                  // Expanded(
+                  //     child: Positioned(
+                  //   child: Row(
+                  //     children: [
+                  //       Expanded(child: Material(
+                  //         borderRadius: BorderRadius.all(Radius.circular(10)),
+                  //         child: InkWell(
 
+                  //         ),
+                  //       ))
+                  //     ],
+                  //   ),
+                  // )),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Align(
+                            alignment: Alignment.topLeft,
+                            child: Container(
+                              height: SizeConfig.screenHeightHalf5_2,
+                              width: SizeConfig.screenWidth4_2,
+                              decoration: BoxDecoration(
+                                  color: asetC_red1,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10))),
+                            )),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: Container(
+                              child: Padding(
+                                padding: EdgeInsets.all(1),
+                                child: Text(
+                                  "PC-Device | Mobile Device",
+                                  style: TextStyle(
+                                      color: white,
+                                      fontFamily: 'Inter',
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w300),
+                                ),
+                              ),
+                            ),
                           ),
-                        ))
-                      ],
-                    ),
-                  )),
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: Container(
+                              child: Padding(
+                                padding: EdgeInsets.all(1),
+                                child: Text(
+                                  "Afdholanabil",
+                                  style: TextStyle(
+                                      color: white,
+                                      fontFamily: 'Inter',
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      
+                    ],
+                  ),
                   Align(
                     alignment: FractionalOffset.topLeft,
                     child: Padding(

@@ -35,6 +35,8 @@ flutter:
   - 'semuaAsset\svg\Lock.svg'
   - 'semuaAsset\svg\Plus.svg'
   - 'semuaAsset\svg\Search.svg'
+  - 'semuaAsset\svg\Game.svg'
+  - 'semuaAsset\svg\Group 13.svg'
 
   fonts:
     - family: Inter
