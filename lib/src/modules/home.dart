@@ -36,58 +36,79 @@ class _HomePagesState extends State<HomePages> {
                   //   ),
                   // )),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
                         child: Align(
-                            alignment: Alignment.topLeft,
                             child: Container(
-                              height: SizeConfig.screenHeightHalf5_2,
-                              width: SizeConfig.screenWidth4_2,
-                              decoration: BoxDecoration(
-                                  color: asetC_red1,
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(10))),
-                            )),
+                          height: SizeConfig.screenHeightHalf5_2,
+                          width: SizeConfig.screenWidth4_2,
+                          decoration: BoxDecoration(
+                              color: asetC_red1,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10))),
+                        )),
                       ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Align(
-                            alignment: Alignment.topLeft,
-                            child: Container(
-                              child: Padding(
-                                padding: EdgeInsets.all(1),
-                                child: Text(
-                                  "PC-Device | Mobile Device",
-                                  style: TextStyle(
-                                      color: white,
-                                      fontFamily: 'Inter',
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Align(
+                              alignment: Alignment.topLeft,
+                              child: Container(
+                                child: Padding(
+                                  padding: EdgeInsets.all(1),
+                                  child: Flexible(
+                                    child: Text(
+                                      "PC-Device | Mobile Device",
+                                      style: TextStyle(
+                                          color: white,
+                                          fontFamily: 'Inter',
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w300,
+                                          overflow: TextOverflow.ellipsis),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Align(
-                            alignment: Alignment.topLeft,
-                            child: Container(
-                              child: Padding(
-                                padding: EdgeInsets.all(1),
-                                child: Text(
-                                  "Afdholanabil",
-                                  style: TextStyle(
-                                      color: white,
-                                      fontFamily: 'Inter',
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500),
+                            Align(
+                              alignment: Alignment.topLeft,
+                              child: Container(
+                                child: Padding(
+                                  padding: EdgeInsets.all(1),
+                                  child: Flexible(
+                                    child: Text(
+                                      "Afdholanabil",
+                                      style: TextStyle(
+                                          color: white,
+                                          fontFamily: 'Inter',
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                          overflow: TextOverflow.ellipsis),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                      
+                      Align(
+                        child: Padding(
+                          padding: EdgeInsets.all(5),
+                          child: SvgPicture.asset('semuaAsset/svg/Game.svg'),
+                        ),
+                      ),
+                      Align(
+                        child: Padding(
+                          padding: EdgeInsets.all(5),
+                          child:
+                              SvgPicture.asset('semuaAsset/svg/Group 13.svg'),
+                        ),
+                      ),
                     ],
                   ),
                   Align(
@@ -376,7 +397,219 @@ class _HomePagesState extends State<HomePages> {
                         autoPlayCurve: Curves.fastLinearToSlowEaseIn,
                         enableInfiniteScroll: true,
                         // autoPlayAnimationDuration: Duration(milliseconds: 8000),
-                      ))
+                      )),
+
+                  SizedBox(
+                    height: 10,
+                  ),
+
+                  Padding(
+                    padding: EdgeInsets.only(top: 20),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Trending",
+                        style: TextStyle(
+                            color: white,
+                            fontFamily: 'Inter',
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            overflow: TextOverflow.ellipsis),
+                      ),
+                    ),
+                  ),
+
+                  Align(
+                      alignment: Alignment.topCenter,
+                      child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: paddingHorozontal1,
+                              vertical: paddingVertical1),
+                          child: GridView.count(
+                              shrinkWrap: true,
+                              primary: false,
+                              crossAxisSpacing: 2,
+                              mainAxisSpacing: 2,
+                              crossAxisCount: 3,
+                              children: <Widget>[
+                                Expanded(
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: Container(
+                                      height: SizeConfig.screenHeight,
+                                      width: SizeConfig.screenWidth4,
+                                      decoration: BoxDecoration(
+                                        color: assetC_red2,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(10)),
+                                      ),
+                                      child: Expanded(
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Image.asset(
+                                                'semuaAsset/gambar/hunt.png',
+                                                fit: BoxFit.fitWidth,
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Align(
+                                                child: Text(
+                                                  "Hunt : Showdown",
+                                                  style: TextStyle(
+                                                      color: white,
+                                                      fontFamily: 'Inter',
+                                                      fontSize: 16,
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                      overflow: TextOverflow
+                                                          .ellipsis),
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding:
+                                                  const EdgeInsets.all(5.0),
+                                              child: Align(
+                                                child: Text(
+                                                  "IDR 49 000",
+                                                  style: TextStyle(
+                                                      color: white,
+                                                      fontFamily: 'Inter',
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w200,
+                                                      overflow: TextOverflow
+                                                          .ellipsis),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: Container(
+                                      height: SizeConfig.screenHeight,
+                                      width: SizeConfig.screenWidth4,
+                                      decoration: BoxDecoration(
+                                        color: assetC_red2,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(10)),
+                                      ),
+                                      child: Expanded(
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Image.asset(
+                                                'semuaAsset/gambar/cyber.png',
+                                                fit: BoxFit.fitWidth,
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Align(
+                                                child: Text(
+                                                  "Cyberpunk 2077",
+                                                  style: TextStyle(
+                                                      color: white,
+                                                      fontFamily: 'Inter',
+                                                      fontSize: 16,
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                      overflow: TextOverflow
+                                                          .ellipsis),
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding:
+                                                  const EdgeInsets.all(5.0),
+                                              child: Align(
+                                                child: Text(
+                                                  "IDR 49 000",
+                                                  style: TextStyle(
+                                                      color: white,
+                                                      fontFamily: 'Inter',
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w200,
+                                                      overflow: TextOverflow
+                                                          .ellipsis),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: Container(
+                                      height: SizeConfig.screenHeight,
+                                      width: SizeConfig.screenWidth4,
+                                      decoration: BoxDecoration(
+                                        color: assetC_red2,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(10)),
+                                      ),
+                                      child: Expanded(
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Image.asset(
+                                                'semuaAsset/gambar/bloon.png',
+                                                fit: BoxFit.fitWidth,
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Align(
+                                                child: Text(
+                                                  "Bloons TD 6",
+                                                  style: TextStyle(
+                                                      color: white,
+                                                      fontFamily: 'Inter',
+                                                      fontSize: 16,
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                      overflow: TextOverflow
+                                                          .ellipsis),
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding:
+                                                  const EdgeInsets.all(5.0),
+                                              child: Align(
+                                                child: Text(
+                                                  "IDR 49 000",
+                                                  style: TextStyle(
+                                                      color: white,
+                                                      fontFamily: 'Inter',
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w200,
+                                                      overflow: TextOverflow
+                                                          .ellipsis),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]))),
                 ],
               ),
             )),

@@ -16,7 +16,7 @@ class dashboardPages extends StatefulWidget {
 
 class _dashboardPagesState extends State<dashboardPages> {
   int currentIdx = 0;
-  final List<Widget> hamalan = [HomePages(), LibraryPages(), AccountPages()];
+  final List<Widget> hamalan = [HomePages(), AccountPages()];
 
   void onTabTabed(int index) {
     setState(() {
@@ -49,11 +49,7 @@ class _dashboardPagesState extends State<dashboardPages> {
                   icon: SvgPicture.asset('semuaAsset/svg/HomeDeactive.svg'),
                   activeIcon: SvgPicture.asset('semuaAsset/svg/HomeActive.svg'),
                   label: 'Home'),
-              new BottomNavigationBarItem(
-                  icon: SvgPicture.asset('semuaAsset/svg/CategoryDeactive.svg'),
-                  activeIcon:
-                      SvgPicture.asset('semuaAsset/svg/CategoryActive.svg'),
-                  label: 'Library'),
+              
               new BottomNavigationBarItem(
                   icon: SvgPicture.asset('semuaAsset/svg/2 UserDeactive.svg'),
                   activeIcon: SvgPicture.asset('semuaAsset/svg/2 UserActive.svg'),
