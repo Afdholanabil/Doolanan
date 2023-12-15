@@ -423,7 +423,7 @@ class HomePages extends StatelessWidget {
                           child: GridView.count(
                               shrinkWrap: true,
                               primary: false,
-                              crossAxisSpacing: 2,
+                              crossAxisSpacing: 4,
                               mainAxisSpacing: 2,
                               crossAxisCount: 3,
                               children: <Widget>[
@@ -444,39 +444,46 @@ class HomePages extends StatelessWidget {
                                             Expanded(
                                               child: Image.asset(
                                                 'semuaAsset/gambar/hunt.png',
-                                                fit: BoxFit.fitWidth,
                                               ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsets.all(5),
-                                              child: Align(
-                                                child: Text(
-                                                  "Hunt : Showdown",
-                                                  style: TextStyle(
-                                                      color: white,
-                                                      fontFamily: 'Inter',
-                                                      fontSize: 16,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      overflow: TextOverflow
-                                                          .ellipsis),
+                                            Expanded(
+                                              child: Padding(
+                                                padding: EdgeInsets.all(5),
+                                                child: Align(
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      "Hunt : Showdown",
+                                                      style: TextStyle(
+                                                          color: white,
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 16,
+                                                          fontWeight:
+                                                              FontWeight.w400,
+                                                          overflow: TextOverflow
+                                                              .ellipsis),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                             ),
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.all(5.0),
-                                              child: Align(
-                                                child: Text(
-                                                  "IDR 49 000",
-                                                  style: TextStyle(
-                                                      color: white,
-                                                      fontFamily: 'Inter',
-                                                      fontSize: 14,
-                                                      fontWeight:
-                                                          FontWeight.w200,
-                                                      overflow: TextOverflow
-                                                          .ellipsis),
+                                            Expanded(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(
+                                                    left: 2.5, right: 2.5),
+                                                child: Align(
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      "IDR 149 000",
+                                                      style: TextStyle(
+                                                          color: white,
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.w200,
+                                                          overflow: TextOverflow
+                                                              .ellipsis),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                             )
@@ -503,39 +510,46 @@ class HomePages extends StatelessWidget {
                                             Expanded(
                                               child: Image.asset(
                                                 'semuaAsset/gambar/cyber.png',
-                                                fit: BoxFit.fitWidth,
                                               ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsets.all(5),
-                                              child: Align(
-                                                child: Text(
-                                                  "Cyberpunk 2077",
-                                                  style: TextStyle(
-                                                      color: white,
-                                                      fontFamily: 'Inter',
-                                                      fontSize: 16,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      overflow: TextOverflow
-                                                          .ellipsis),
+                                            Expanded(
+                                              child: Padding(
+                                                padding: EdgeInsets.all(5),
+                                                child: Align(
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      "Cyberpunk 2077",
+                                                      style: TextStyle(
+                                                          color: white,
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 16,
+                                                          fontWeight:
+                                                              FontWeight.w400,
+                                                          overflow: TextOverflow
+                                                              .ellipsis),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                             ),
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.all(5.0),
-                                              child: Align(
-                                                child: Text(
-                                                  "IDR 49 000",
-                                                  style: TextStyle(
-                                                      color: white,
-                                                      fontFamily: 'Inter',
-                                                      fontSize: 14,
-                                                      fontWeight:
-                                                          FontWeight.w200,
-                                                      overflow: TextOverflow
-                                                          .ellipsis),
+                                            Expanded(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(
+                                                    left: 2.5, right: 2.5),
+                                                child: Align(
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      "IDR 149 000",
+                                                      style: TextStyle(
+                                                          color: white,
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.w200,
+                                                          overflow: TextOverflow
+                                                              .ellipsis),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                             )
@@ -562,39 +576,46 @@ class HomePages extends StatelessWidget {
                                             Expanded(
                                               child: Image.asset(
                                                 'semuaAsset/gambar/bloon.png',
-                                                fit: BoxFit.fitWidth,
                                               ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsets.all(5),
-                                              child: Align(
-                                                child: Text(
-                                                  "Bloons TD 6",
-                                                  style: TextStyle(
-                                                      color: white,
-                                                      fontFamily: 'Inter',
-                                                      fontSize: 16,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      overflow: TextOverflow
-                                                          .ellipsis),
+                                            Expanded(
+                                              child: Padding(
+                                                padding: EdgeInsets.all(5),
+                                                child: Align(
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      "Bloons TD 6",
+                                                      style: TextStyle(
+                                                          color: white,
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 16,
+                                                          fontWeight:
+                                                              FontWeight.w400,
+                                                          overflow: TextOverflow
+                                                              .ellipsis),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                             ),
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.all(5.0),
-                                              child: Align(
-                                                child: Text(
-                                                  "IDR 49 000",
-                                                  style: TextStyle(
-                                                      color: white,
-                                                      fontFamily: 'Inter',
-                                                      fontSize: 14,
-                                                      fontWeight:
-                                                          FontWeight.w200,
-                                                      overflow: TextOverflow
-                                                          .ellipsis),
+                                            Expanded(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(
+                                                    left: 2.5, right: 2.5),
+                                                child: Align(
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      "IDR 149 000",
+                                                      style: TextStyle(
+                                                          color: white,
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 14,
+                                                          fontWeight:
+                                                              FontWeight.w200,
+                                                          overflow: TextOverflow
+                                                              .ellipsis),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                             )

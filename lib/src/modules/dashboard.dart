@@ -1,5 +1,6 @@
 import 'package:doolanan/src/modules/account.dart';
 import 'package:doolanan/src/modules/home.dart';
+import 'package:doolanan/src/modules/library.dart';
 
 import 'package:doolanan/utils/app_style.dart';
 import 'package:doolanan/utils/size_config.dart';
@@ -16,7 +17,7 @@ class dashboardPages extends StatefulWidget {
 
 class _dashboardPagesState extends State<dashboardPages> {
   int currentIdx = 0;
-  final List<Widget> hamalan = [HomePages(), AccountPages()];
+  final List<Widget> hamalan = [HomePages(),LibraryPages(), AccountPages()];
 
   void onTabTabed(int index) {
     setState(() {
@@ -49,6 +50,12 @@ class _dashboardPagesState extends State<dashboardPages> {
                   icon: SvgPicture.asset('semuaAsset/svg/HomeDeactive.svg'),
                   activeIcon: SvgPicture.asset('semuaAsset/svg/HomeActive.svg'),
                   label: 'Home'),
+
+              new BottomNavigationBarItem(
+                  icon: SvgPicture.asset('semuaAsset/svg/CategoryDeactive.svg'),
+                  activeIcon: SvgPicture.asset('semuaAsset/svg/CategoryActive.svg'),
+                  label: 'Library',
+                  backgroundColor: bg_color),
               
               new BottomNavigationBarItem(
                   icon: SvgPicture.asset('semuaAsset/svg/2 UserDeactive.svg'),
