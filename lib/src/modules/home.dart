@@ -55,16 +55,14 @@ class HomePages extends StatelessWidget {
                               child: Container(
                                 child: Padding(
                                   padding: EdgeInsets.all(1),
-                                  child: Flexible(
-                                    child: Text(
-                                      "PC-Device | Mobile Device",
-                                      style: TextStyle(
-                                          color: white,
-                                          fontFamily: 'Inter',
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w300,
-                                          overflow: TextOverflow.ellipsis),
-                                    ),
+                                  child: Text(
+                                    "PC-Device | Mobile Device",
+                                    style: TextStyle(
+                                        color: white,
+                                        fontFamily: 'Inter',
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w300,
+                                        overflow: TextOverflow.ellipsis),
                                   ),
                                 ),
                               ),
@@ -74,16 +72,14 @@ class HomePages extends StatelessWidget {
                               child: Container(
                                 child: Padding(
                                   padding: EdgeInsets.all(1),
-                                  child: Flexible(
-                                    child: Text(
-                                      "Afdholanabil",
-                                      style: TextStyle(
-                                          color: white,
-                                          fontFamily: 'Inter',
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w500,
-                                          overflow: TextOverflow.ellipsis),
-                                    ),
+                                  child: Text(
+                                    "Afdholanabil",
+                                    style: TextStyle(
+                                        color: white,
+                                        fontFamily: 'Inter',
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w500,
+                                        overflow: TextOverflow.ellipsis),
                                   ),
                                 ),
                               ),
@@ -160,9 +156,8 @@ class HomePages extends StatelessWidget {
                                         borderRadius: BorderRadius.all(
                                           Radius.circular(20),
                                         )),
-                                    child: Expanded(
-                                        child: SvgPicture.asset(
-                                            'semuaAsset/svg/Search.svg')),
+                                    child: SvgPicture.asset(
+                                        'semuaAsset/svg/Search.svg'),
                                   ),
                                 ),
                               ),
@@ -189,196 +184,184 @@ class HomePages extends StatelessWidget {
                   ),
                   CarouselSlider(
                       items: [
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20))),
-                            // width: SizeConfig.screenHeight,
-                            // height: SizeConfig.screenHeightHalf2,
-                            padding: EdgeInsets.symmetric(horizontal: 5),
-                            child: Stack(
-                              fit: StackFit.passthrough,
-                              children: [
-                                Expanded(
-                                  child: Image.asset(
-                                    'semuaAsset/gambar/Rectangle 4.png',
-                                    fit: BoxFit.fill,
-                                    width: double.infinity,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Image.asset(
-                                    'semuaAsset/gambar/Rectangle 13.png',
-                                    fit: BoxFit.fill,
-                                    width: double.infinity,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Align(
-                                    alignment: Alignment.bottomLeft,
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(
-                                          bottom: 30, left: 15, right: 15),
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Flexible(
-                                            child: Align(
-                                              alignment: Alignment.bottomLeft,
+                        Container(
+                          decoration: BoxDecoration(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20))),
+                          // width: SizeConfig.screenHeight,
+                          // height: SizeConfig.screenHeightHalf2,
+                          padding: EdgeInsets.symmetric(horizontal: 5),
+                          child: Stack(
+                            fit: StackFit.passthrough,
+                            children: [
+                              Image.asset(
+                                'semuaAsset/gambar/Rectangle 4.png',
+                                fit: BoxFit.fill,
+                                width: double.infinity,
+                              ),
+                              Image.asset(
+                                'semuaAsset/gambar/Rectangle 13.png',
+                                fit: BoxFit.fill,
+                                width: double.infinity,
+                              ),
+                              Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      bottom: 30, left: 15, right: 15),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Align(
+                                          alignment: Alignment.bottomLeft,
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsets.symmetric(
+                                                    vertical: 10),
+                                            child: Text(
+                                                "Starting at IDR 149 000",
+                                                style: TextStyle(
+                                                  color: white,
+                                                  fontFamily:
+                                                      'Be Vietnam Pro',
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w500,
+                                                  overflow:
+                                                      TextOverflow.ellipsis,
+                                                )),
+                                          ),
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment: Alignment.bottomLeft,
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Expanded(
                                               child: Padding(
                                                 padding:
-                                                    const EdgeInsets.symmetric(
-                                                        vertical: 10),
-                                                child: Text(
-                                                    "Starting at IDR 149 000",
-                                                    style: TextStyle(
+                                                    const EdgeInsets.only(
+                                                        right: 10),
+                                                child: Container(
+                                                    width: SizeConfig
+                                                        .screenWidth4,
+                                                    height: SizeConfig
+                                                        .screenHeightHalf6,
+                                                    decoration: BoxDecoration(
+                                                        color: white,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .all(Radius
+                                                                    .circular(
+                                                                        7))),
+                                                    child: Material(
                                                       color: white,
-                                                      fontFamily:
-                                                          'Be Vietnam Pro',
-                                                      fontSize: 16,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                      overflow:
-                                                          TextOverflow.ellipsis,
+                                                      borderRadius:
+                                                          BorderRadius.all(
+                                                              Radius
+                                                                  .circular(
+                                                                      20)),
+                                                      child: InkWell(
+                                                        splashColor:
+                                                            asetC_red1,
+                                                        highlightColor:
+                                                            assetC_red4,
+                                                        onTap: () {},
+                                                        child: Align(
+                                                          alignment:
+                                                              Alignment
+                                                                  .center,
+                                                          child: Text(
+                                                            "BUY NOW",
+                                                            style: TextStyle(
+                                                                color:
+                                                                    assetC_red2,
+                                                                fontFamily:
+                                                                    'Bebas Neue',
+                                                                fontSize:
+                                                                    20,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600,
+                                                                overflow:
+                                                                    TextOverflow
+                                                                        .ellipsis),
+                                                          ),
+                                                        ),
+                                                      ),
                                                     )),
                                               ),
                                             ),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.bottomLeft,
-                                            child: Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
-                                              children: [
-                                                Expanded(
+                                            Material(
+                                              color: Colors.transparent,
+                                              borderOnForeground: false,
+                                              borderRadius:
+                                                  BorderRadius.all(
+                                                      Radius.circular(
+                                                          20)),
+                                              child: InkWell(
+                                                onTap: () {},
+                                                highlightColor:
+                                                    asetC2_red4,
+                                                splashColor: asetC2_red4,
+                                                child: Container(
+                                                  height: SizeConfig
+                                                      .screenHeightHalf6,
+                                                  width: SizeConfig
+                                                      .screenWidth4,
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                          width: 2,
+                                                          color: white,
+                                                          style:
+                                                              BorderStyle
+                                                                  .solid),
+                                                      borderRadius:
+                                                          BorderRadius
+                                                              .all(Radius
+                                                                  .circular(
+                                                                      10))),
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsets.only(
-                                                            right: 10),
-                                                    child: Container(
-                                                        width: SizeConfig
-                                                            .screenWidth4,
-                                                        height: SizeConfig
-                                                            .screenHeightHalf6,
-                                                        decoration: BoxDecoration(
-                                                            color: white,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .all(Radius
-                                                                        .circular(
-                                                                            7))),
-                                                        child: Material(
-                                                          color: white,
-                                                          borderRadius:
-                                                              BorderRadius.all(
-                                                                  Radius
-                                                                      .circular(
-                                                                          20)),
-                                                          child: InkWell(
-                                                            splashColor:
-                                                                asetC_red1,
-                                                            highlightColor:
-                                                                assetC_red4,
-                                                            onTap: () {},
-                                                            child: Flexible(
-                                                              child: Align(
-                                                                alignment:
-                                                                    Alignment
-                                                                        .center,
-                                                                child: Text(
-                                                                  "BUY NOW",
-                                                                  style: TextStyle(
-                                                                      color:
-                                                                          assetC_red2,
-                                                                      fontFamily:
-                                                                          'Bebas Neue',
-                                                                      fontSize:
-                                                                          20,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w600,
-                                                                      overflow:
-                                                                          TextOverflow
-                                                                              .ellipsis),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        )),
-                                                  ),
-                                                ),
-                                                Expanded(
-                                                  child: Material(
-                                                    color: Colors.transparent,
-                                                    borderOnForeground: false,
-                                                    borderRadius:
-                                                        BorderRadius.all(
-                                                            Radius.circular(
-                                                                20)),
-                                                    child: InkWell(
-                                                      onTap: () {},
-                                                      highlightColor:
-                                                          asetC2_red4,
-                                                      splashColor: asetC2_red4,
-                                                      child: Container(
-                                                        height: SizeConfig
-                                                            .screenHeightHalf6,
-                                                        width: SizeConfig
-                                                            .screenWidth4,
-                                                        decoration: BoxDecoration(
-                                                            border: Border.all(
-                                                                width: 2,
-                                                                color: white,
-                                                                style:
-                                                                    BorderStyle
-                                                                        .solid),
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .all(Radius
-                                                                        .circular(
-                                                                            10))),
-                                                        child: Padding(
-                                                          padding:
-                                                              EdgeInsets.all(0),
-                                                          child: Row(children: [
-                                                            Expanded(
-                                                              child: SvgPicture
-                                                                  .asset(
-                                                                      'semuaAsset/svg/Plus.svg'),
-                                                            ),
-                                                            Flexible(
-                                                                child: Text(
-                                                              "ADD TO WISHLIST",
-                                                              style: TextStyle(
-                                                                  color: white,
-                                                                  fontFamily:
-                                                                      'Bebas Neue',
-                                                                  fontSize: 16,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                  overflow:
-                                                                      TextOverflow
-                                                                          .ellipsis),
-                                                            )),
-                                                          ]),
+                                                        EdgeInsets.all(0),
+                                                    child: Row(children: [
+                                                      Expanded(
+                                                        child: SvgPicture
+                                                            .asset(
+                                                                'semuaAsset/svg/Plus.svg'),
+                                                      ),
+                                                      Expanded(
+                                                        child: Text(
+                                                          "ADD TO WISHLIST",
+                                                          style: TextStyle(
+                                                              color: white,
+                                                              fontFamily:
+                                                                  'Bebas Neue',
+                                                              fontSize: 16,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              overflow:
+                                                                  TextOverflow
+                                                                      .ellipsis),
                                                         ),
                                                       ),
-                                                    ),
+                                                    ]),
                                                   ),
                                                 ),
-                                              ],
+                                              ),
                                             ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
+                                          ],
+                                        ),
+                                      )
+                                    ],
                                   ),
-                                )
-                              ],
-                            ),
+                                ),
+                              )
+                            ],
                           ),
                         ),
                       ],
@@ -427,201 +410,172 @@ class HomePages extends StatelessWidget {
                               mainAxisSpacing: 2,
                               crossAxisCount: 3,
                               children: <Widget>[
-                                Expanded(
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Container(
-                                      height: SizeConfig.screenHeight,
-                                      width: SizeConfig.screenWidth4,
-                                      decoration: BoxDecoration(
-                                        color: assetC_red2,
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(10)),
-                                      ),
-                                      child: Expanded(
-                                        child: Column(
-                                          children: [
-                                            Expanded(
-                                              child: Image.asset(
-                                                'semuaAsset/gambar/hunt.png',
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsets.all(5),
-                                                child: Align(
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      "Hunt : Showdown",
-                                                      style: TextStyle(
-                                                          color: white,
-                                                          fontFamily: 'Inter',
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Padding(
-                                                padding: const EdgeInsets.only(
-                                                    left: 2.5, right: 2.5),
-                                                child: Align(
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      "IDR 149 000",
-                                                      style: TextStyle(
-                                                          color: white,
-                                                          fontFamily: 'Inter',
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w200,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            )
-                                          ],
+                                Align(
+                                  alignment: Alignment.center,
+                                  child: Container(
+                                    height: SizeConfig.screenHeight,
+                                    width: SizeConfig.screenWidth4,
+                                    decoration: BoxDecoration(
+                                      color: assetC_red2,
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(10)),
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Image.asset(
+                                            'semuaAsset/gambar/hunt.png',
+                                          ),
                                         ),
-                                      ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: EdgeInsets.all(5),
+                                            child: Align(
+                                              child: Text(
+                                                "Hunt : Showdown",
+                                                style: TextStyle(
+                                                    color: white,
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 16,
+                                                    fontWeight: FontWeight.w400,
+                                                    overflow:
+                                                        TextOverflow.ellipsis),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 2.5, right: 2.5),
+                                            child: Align(
+                                              child: Text(
+                                                "IDR 149 000",
+                                                style: TextStyle(
+                                                    color: white,
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.w200,
+                                                    overflow:
+                                                        TextOverflow.ellipsis),
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
                                     ),
                                   ),
                                 ),
-                                Expanded(
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Container(
-                                      height: SizeConfig.screenHeight,
-                                      width: SizeConfig.screenWidth4,
-                                      decoration: BoxDecoration(
-                                        color: assetC_red2,
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(10)),
-                                      ),
-                                      child: Expanded(
-                                        child: Column(
-                                          children: [
-                                            Expanded(
-                                              child: Image.asset(
-                                                'semuaAsset/gambar/cyber.png',
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsets.all(5),
-                                                child: Align(
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      "Cyberpunk 2077",
-                                                      style: TextStyle(
-                                                          color: white,
-                                                          fontFamily: 'Inter',
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Padding(
-                                                padding: const EdgeInsets.only(
-                                                    left: 2.5, right: 2.5),
-                                                child: Align(
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      "IDR 149 000",
-                                                      style: TextStyle(
-                                                          color: white,
-                                                          fontFamily: 'Inter',
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w200,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            )
-                                          ],
+                                Align(
+                                  alignment: Alignment.center,
+                                  child: Container(
+                                    height: SizeConfig.screenHeight,
+                                    width: SizeConfig.screenWidth4,
+                                    decoration: BoxDecoration(
+                                      color: assetC_red2,
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(10)),
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Image.asset(
+                                            'semuaAsset/gambar/cyber.png',
+                                          ),
                                         ),
-                                      ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: EdgeInsets.all(5),
+                                            child: Align(
+                                              child: Text(
+                                                "Cyberpunk 2077",
+                                                style: TextStyle(
+                                                    color: white,
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 16,
+                                                    fontWeight: FontWeight.w400,
+                                                    overflow:
+                                                        TextOverflow.ellipsis),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 2.5,
+                                                right: 2.5),
+                                            child: Align(
+                                              child: Text(
+                                                "IDR 149 000",
+                                                style: TextStyle(
+                                                    color: white,
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.w200,
+                                                    overflow:
+                                                        TextOverflow.ellipsis),
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
                                     ),
                                   ),
                                 ),
-                                Expanded(
-                                  child: Align(
-                                    alignment: Alignment.center,
-                                    child: Container(
-                                      height: SizeConfig.screenHeight,
-                                      width: SizeConfig.screenWidth4,
-                                      decoration: BoxDecoration(
-                                        color: assetC_red2,
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(10)),
-                                      ),
-                                      child: Expanded(
-                                        child: Column(
-                                          children: [
-                                            Expanded(
-                                              child: Image.asset(
-                                                'semuaAsset/gambar/bloon.png',
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsets.all(5),
-                                                child: Align(
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      "Bloons TD 6",
-                                                      style: TextStyle(
-                                                          color: white,
-                                                          fontFamily: 'Inter',
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Expanded(
-                                              child: Padding(
-                                                padding: const EdgeInsets.only(
-                                                    left: 2.5, right: 2.5),
-                                                child: Align(
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      "IDR 149 000",
-                                                      style: TextStyle(
-                                                          color: white,
-                                                          fontFamily: 'Inter',
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w200,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            )
-                                          ],
+                                Align(
+                                  alignment: Alignment.center,
+                                  child: Container(
+                                    height: SizeConfig.screenHeight,
+                                    width: SizeConfig.screenWidth4,
+                                    decoration: BoxDecoration(
+                                      color: assetC_red2,
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(10)),
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Image.asset(
+                                            'semuaAsset/gambar/bloon.png',
+                                          ),
                                         ),
-                                      ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: EdgeInsets.all(5),
+                                            child: Align(
+                                              child: Text(
+                                                "Bloons TD 6",
+                                                style: TextStyle(
+                                                    color: white,
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 16,
+                                                    fontWeight: FontWeight.w400,
+                                                    overflow:
+                                                        TextOverflow.ellipsis),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 2.5, right: 2.5),
+                                            child: Align(
+                                              child: Text(
+                                                "IDR 149 000",
+                                                style: TextStyle(
+                                                    color: white,
+                                                    fontFamily: 'Inter',
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.w200,
+                                                    overflow:
+                                                        TextOverflow.ellipsis),
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
                                     ),
                                   ),
                                 ),
