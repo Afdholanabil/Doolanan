@@ -3,14 +3,9 @@ import 'package:doolanan/utils/app_style.dart';
 import 'package:doolanan/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
-class loginPages extends StatefulWidget {
-  const loginPages({super.key});
+class LoginPages extends StatelessWidget {
+  const LoginPages({super.key});
 
-  @override
-  State<loginPages> createState() => _loginPagesState();
-}
-
-class _loginPagesState extends State<loginPages> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);

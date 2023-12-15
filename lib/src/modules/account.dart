@@ -4,14 +4,9 @@ import 'package:doolanan/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class AccountPages extends StatefulWidget {
+class AccountPages extends StatelessWidget {
   const AccountPages({super.key});
 
-  @override
-  State<AccountPages> createState() => _AccountPagesState();
-}
-
-class _AccountPagesState extends State<AccountPages> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -492,7 +487,7 @@ class _AccountPagesState extends State<AccountPages> {
                               Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => loginPages()));
+                                      builder: (context) => LoginPages()));
                             },
                             child: Flexible(
                               child: Text(
