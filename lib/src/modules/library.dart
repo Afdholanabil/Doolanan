@@ -16,6 +16,7 @@ class LibraryPages extends StatelessWidget {
               alignment: Alignment.topCenter,
               child: SingleChildScrollView(
                 child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Flexible(
                       child: Padding(
