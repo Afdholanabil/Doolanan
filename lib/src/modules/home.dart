@@ -3,6 +3,7 @@ import 'package:doolanan/utils/app_style.dart';
 import 'package:doolanan/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:doolanan/src/model/kategory_model.dart';
 
 class HomePages extends StatelessWidget {
   const HomePages({super.key});
@@ -40,9 +41,14 @@ class HomePages extends StatelessWidget {
                           height: SizeConfig.screenHeightHalf5_2,
                           width: SizeConfig.screenWidth4_2,
                           decoration: BoxDecoration(
-                              color: asetC_red1,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
+                            color: Colors.transparent,
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          child: CircleAvatar(
+                            radius: 50,
+                            backgroundImage:
+                                AssetImage('semuaAsset/gambar/re8.jpg'),
+                          ),
                         )),
                       ),
                       Expanded(
@@ -117,15 +123,18 @@ class HomePages extends StatelessWidget {
                           children: [
                             Expanded(
                               child: TextFormField(
+                                maxLines: 1,
                                 controller: null,
-                                cursorColor: bg_color,
+                                cursorColor: white,
                                 style: TextStyle(
-                                    fontFamily:
-                                        "semuaAsset/font/Inter_Light.ttf",
+                                    fontFamily: "Inter",
                                     color: white,
                                     fontSize: (16),
                                     fontWeight: FontWeight.w300),
                                 decoration: InputDecoration(
+                                  enabledBorder: OutlineInputBorder(
+                                      borderSide: BorderSide.none,
+                                      gapPadding: 4),
                                   fillColor: aset_search,
                                   focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide.none,
@@ -168,7 +177,7 @@ class HomePages extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    padding: const EdgeInsets.only(top: 20, bottom: 10),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -217,15 +226,13 @@ class HomePages extends StatelessWidget {
                                         child: Align(
                                           alignment: Alignment.bottomLeft,
                                           child: Padding(
-                                            padding:
-                                                const EdgeInsets.symmetric(
-                                                    vertical: 10),
+                                            padding: const EdgeInsets.symmetric(
+                                                vertical: 10),
                                             child: Text(
                                                 "Starting at IDR 149 000",
                                                 style: TextStyle(
                                                   color: white,
-                                                  fontFamily:
-                                                      'Be Vietnam Pro',
+                                                  fontFamily: 'Be Vietnam Pro',
                                                   fontSize: 16,
                                                   fontWeight: FontWeight.w500,
                                                   overflow:
@@ -242,38 +249,33 @@ class HomePages extends StatelessWidget {
                                           children: [
                                             Expanded(
                                               child: Padding(
-                                                padding:
-                                                    const EdgeInsets.only(
-                                                        right: 10),
+                                                padding: const EdgeInsets.only(
+                                                    right: 10),
                                                 child: Container(
-                                                    width: SizeConfig
-                                                        .screenWidth4,
+                                                    width:
+                                                        SizeConfig.screenWidth4,
                                                     height: SizeConfig
                                                         .screenHeightHalf6,
                                                     decoration: BoxDecoration(
                                                         color: white,
                                                         borderRadius:
-                                                            BorderRadius
-                                                                .all(Radius
-                                                                    .circular(
-                                                                        7))),
+                                                            BorderRadius.all(
+                                                                Radius.circular(
+                                                                    7))),
                                                     child: Material(
                                                       color: white,
                                                       borderRadius:
                                                           BorderRadius.all(
-                                                              Radius
-                                                                  .circular(
-                                                                      20)),
+                                                              Radius.circular(
+                                                                  20)),
                                                       child: InkWell(
-                                                        splashColor:
-                                                            asetC_red1,
+                                                        splashColor: asetC_red1,
                                                         highlightColor:
                                                             assetC_red4,
                                                         onTap: () {},
                                                         child: Align(
                                                           alignment:
-                                                              Alignment
-                                                                  .center,
+                                                              Alignment.center,
                                                           child: Text(
                                                             "BUY NOW",
                                                             style: TextStyle(
@@ -281,8 +283,7 @@ class HomePages extends StatelessWidget {
                                                                     assetC_red2,
                                                                 fontFamily:
                                                                     'Bebas Neue',
-                                                                fontSize:
-                                                                    20,
+                                                                fontSize: 20,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
@@ -295,61 +296,66 @@ class HomePages extends StatelessWidget {
                                                     )),
                                               ),
                                             ),
-                                            Material(
-                                              color: Colors.transparent,
-                                              borderOnForeground: false,
-                                              borderRadius:
-                                                  BorderRadius.all(
-                                                      Radius.circular(
-                                                          20)),
-                                              child: InkWell(
-                                                onTap: () {},
-                                                highlightColor:
-                                                    asetC2_red4,
-                                                splashColor: asetC2_red4,
-                                                child: Container(
-                                                  height: SizeConfig
-                                                      .screenHeightHalf6,
-                                                  width: SizeConfig
-                                                      .screenWidth4,
-                                                  decoration: BoxDecoration(
-                                                      border: Border.all(
-                                                          width: 2,
-                                                          color: white,
-                                                          style:
-                                                              BorderStyle
-                                                                  .solid),
-                                                      borderRadius:
-                                                          BorderRadius
-                                                              .all(Radius
-                                                                  .circular(
-                                                                      10))),
-                                                  child: Padding(
-                                                    padding:
-                                                        EdgeInsets.all(0),
-                                                    child: Row(children: [
-                                                      Expanded(
-                                                        child: SvgPicture
-                                                            .asset(
-                                                                'semuaAsset/svg/Plus.svg'),
-                                                      ),
-                                                      Expanded(
-                                                        child: Text(
-                                                          "ADD TO WISHLIST",
-                                                          style: TextStyle(
-                                                              color: white,
-                                                              fontFamily:
-                                                                  'Bebas Neue',
-                                                              fontSize: 16,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                              overflow:
-                                                                  TextOverflow
-                                                                      .ellipsis),
-                                                        ),
-                                                      ),
-                                                    ]),
+                                            Expanded(
+                                              child: Material(
+                                                color: Colors.transparent,
+                                                borderOnForeground: false,
+                                                borderRadius: BorderRadius.all(
+                                                    Radius.circular(20)),
+                                                child: InkWell(
+                                                  onTap: () {},
+                                                  highlightColor: asetC2_red4,
+                                                  splashColor: asetC2_red4,
+                                                  child: Container(
+                                                    height: SizeConfig
+                                                        .screenHeightHalf6,
+                                                    width:
+                                                        SizeConfig.screenWidth4,
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            width: 2,
+                                                            color: white,
+                                                            style: BorderStyle
+                                                                .solid),
+                                                        borderRadius:
+                                                            BorderRadius.all(
+                                                                Radius.circular(
+                                                                    10))),
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsets.all(0),
+                                                      child: Row(
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .spaceEvenly,
+                                                          children: [
+                                                            Flexible(
+                                                              flex: 2,
+                                                              child: SvgPicture
+                                                                  .asset(
+                                                                      'semuaAsset/svg/Plus.svg'),
+                                                            ),
+                                                            Flexible(
+                                                              flex: 4,
+                                                              child: Text(
+                                                                "ADD TO WISHLIST",
+                                                                style: TextStyle(
+                                                                    color:
+                                                                        white,
+                                                                    fontFamily:
+                                                                        'Bebas Neue',
+                                                                    fontSize:
+                                                                        16,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                    overflow:
+                                                                        TextOverflow
+                                                                            .ellipsis),
+                                                              ),
+                                                            ),
+                                                          ]),
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -367,8 +373,8 @@ class HomePages extends StatelessWidget {
                       ],
                       options: CarouselOptions(
                         height: SizeConfig.screenHeightHalf2_2,
-                        // autoPlay: true,
-                        // autoPlayInterval: Duration(seconds: 3),
+                        autoPlay: true,
+                        autoPlayInterval: Duration(seconds: 3),
                         // enlargeCenterPage: true,
                         aspectRatio: 16 / 4,
                         viewportFraction: 1,
@@ -379,6 +385,37 @@ class HomePages extends StatelessWidget {
 
                   SizedBox(
                     height: 10,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 20, bottom: 10),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Browse by Category",
+                        style: TextStyle(
+                            fontFamily: "Inter",
+                            color: white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            overflow: TextOverflow.ellipsis),
+                      ),
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                        children: listKategory.map((kategoryData) {
+                      return InkWell(
+                        onTap: () {},
+                        child: Padding(
+                          padding:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          child: Stack(
+                            children: [Image.asset(kategoryData.gambarK)],
+                          ),
+                        ),
+                      );
+                    }).toList()),
                   ),
 
                   Padding(
@@ -391,7 +428,7 @@ class HomePages extends StatelessWidget {
                             color: white,
                             fontFamily: 'Inter',
                             fontSize: 18,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                             overflow: TextOverflow.ellipsis),
                       ),
                     ),
@@ -425,6 +462,7 @@ class HomePages extends StatelessWidget {
                                         Expanded(
                                           child: Image.asset(
                                             'semuaAsset/gambar/hunt.png',
+                                            fit: BoxFit.fitWidth,
                                           ),
                                         ),
                                         Expanded(
@@ -503,8 +541,7 @@ class HomePages extends StatelessWidget {
                                         Expanded(
                                           child: Padding(
                                             padding: const EdgeInsets.only(
-                                                left: 2.5,
-                                                right: 2.5),
+                                                left: 2.5, right: 2.5),
                                             child: Align(
                                               child: Text(
                                                 "IDR 149 000",
@@ -579,7 +616,8 @@ class HomePages extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                              ]))),
+                              ]))
+                              ),
                 ],
               ),
             )),
