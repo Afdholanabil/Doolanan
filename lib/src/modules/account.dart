@@ -31,8 +31,8 @@ class AccountPages extends StatelessWidget {
                                 width: SizeConfig.screenWidth2,
                                 decoration: BoxDecoration(
                                     color: asetC_red1,
-                                    borderRadius: BorderRadius.all(
-                                        Radius.circular(50))),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(50))),
                               )),
                         ),
                         SizedBox(
@@ -49,8 +49,7 @@ class AccountPages extends StatelessWidget {
                                 child: Column(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceAround,
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Flexible(
                                       child: Align(
@@ -207,8 +206,7 @@ class AccountPages extends StatelessWidget {
                                     child: Align(
                                       alignment: Alignment.topLeft,
                                       child: Padding(
-                                        padding:
-                                            const EdgeInsets.only(top: 15),
+                                        padding: const EdgeInsets.only(top: 15),
                                         child: Text(
                                           'Bloons TD 6',
                                           style: TextStyle(
@@ -225,8 +223,7 @@ class AccountPages extends StatelessWidget {
                                     child: Align(
                                       alignment: Alignment.topLeft,
                                       child: Padding(
-                                        padding:
-                                            const EdgeInsets.only(top: 0),
+                                        padding: const EdgeInsets.only(top: 0),
                                         child: Text(
                                           'You\'ve unlocked 1/56',
                                           style: TextStyle(
@@ -266,8 +263,7 @@ class AccountPages extends StatelessWidget {
                                         Expanded(
                                             child: Container(
                                           child: Padding(
-                                            padding:
-                                                const EdgeInsets.all(5.0),
+                                            padding: const EdgeInsets.all(5.0),
                                             child: SvgPicture.asset(
                                                 'semuaAsset/svg/Lock.svg'),
                                           ),
@@ -282,8 +278,7 @@ class AccountPages extends StatelessWidget {
                                         Expanded(
                                             child: Container(
                                           child: Padding(
-                                            padding:
-                                                const EdgeInsets.all(5.0),
+                                            padding: const EdgeInsets.all(5.0),
                                             child: SvgPicture.asset(
                                                 'semuaAsset/svg/Lock.svg'),
                                           ),
@@ -298,8 +293,7 @@ class AccountPages extends StatelessWidget {
                                         Expanded(
                                             child: Container(
                                           child: Padding(
-                                            padding:
-                                                const EdgeInsets.all(5.0),
+                                            padding: const EdgeInsets.all(5.0),
                                             child: SvgPicture.asset(
                                                 'semuaAsset/svg/Lock.svg'),
                                           ),
@@ -318,7 +312,7 @@ class AccountPages extends StatelessWidget {
                         ),
                       ),
                     ),
-                
+
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 10, vertical: 20),
@@ -327,13 +321,12 @@ class AccountPages extends StatelessWidget {
                         width: SizeConfig.screenWidth,
                         decoration: BoxDecoration(
                             color: white,
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(5))),
+                            borderRadius: BorderRadius.all(Radius.circular(5))),
                         child: Padding(
                             padding: EdgeInsets.symmetric(horizontal: 20)),
                       ),
                     ),
-                
+
                     //-----------------------------------RECENT ACTIVITY -----------------------------------
                     Padding(
                       padding: const EdgeInsets.only(top: 10),
@@ -366,13 +359,10 @@ class AccountPages extends StatelessWidget {
                           child: Row(
                             children: [
                               Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(15),
-                                  child: Align(
-                                    alignment: Alignment.centerLeft,
-                                    child: Image.asset(
-                                        'semuaAsset/gambar/bloon.png'),
-                                  ),
+                                child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Image.asset(
+                                      'semuaAsset/gambar/bloon.png'),
                                 ),
                               ),
                               Expanded(
@@ -382,16 +372,14 @@ class AccountPages extends StatelessWidget {
                                     child: Align(
                                       alignment: Alignment.topLeft,
                                       child: Padding(
-                                        padding:
-                                            const EdgeInsets.only(top: 15),
+                                        padding: const EdgeInsets.only(top: 15),
                                         child: Text(
                                           'Bloons TD 6',
                                           style: TextStyle(
-                                              fontFamily:
-                                                  'semuaAsset/font/inter_medium.ttf',
+                                              fontFamily: 'Inter',
                                               color: white,
                                               fontSize: 18,
-                                              fontWeight: FontWeight.w500),
+                                              fontWeight: FontWeight.w600),
                                         ),
                                       ),
                                     ),
@@ -400,13 +388,11 @@ class AccountPages extends StatelessWidget {
                                     child: Align(
                                       alignment: Alignment.centerLeft,
                                       child: Padding(
-                                        padding:
-                                            const EdgeInsets.only(top: 0),
+                                        padding: const EdgeInsets.only(top: 0),
                                         child: Text(
                                           'Play time : 34.5 Hours',
                                           style: TextStyle(
-                                              fontFamily:
-                                                  'semuaAsset/font/Inter_Light.ttf',
+                                              fontFamily: 'Inter',
                                               color: white,
                                               fontSize: 16,
                                               fontWeight: FontWeight.w300,
@@ -449,13 +435,12 @@ class AccountPages extends StatelessWidget {
                         width: SizeConfig.screenWidth,
                         decoration: BoxDecoration(
                             color: white,
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(5))),
+                            borderRadius: BorderRadius.all(Radius.circular(5))),
                         child: Padding(
                             padding: EdgeInsets.symmetric(horizontal: 20)),
                       ),
                     ),
-                
+
                     //------------------------------- CHANGE ACCOUNT -----------------------------
                     Align(
                       alignment: Alignment.topLeft,
@@ -464,8 +449,7 @@ class AccountPages extends StatelessWidget {
                         child: Text(
                           "Change account",
                           style: TextStyle(
-                              fontFamily:
-                                  'semuaAsset/font/inter_medium.ttf',
+                              fontFamily: 'semuaAsset/font/inter_medium.ttf',
                               color: white,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
@@ -487,8 +471,7 @@ class AccountPages extends StatelessWidget {
                           child: Text(
                             "Sign out of this account",
                             style: TextStyle(
-                                fontFamily:
-                                    'semuaAsset/font/inter_medium.ttf',
+                                fontFamily: 'semuaAsset/font/inter_medium.ttf',
                                 color: white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
