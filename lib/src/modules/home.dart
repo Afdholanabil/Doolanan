@@ -1,12 +1,41 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:doolanan/service/api/SteamAPI.dart';
+import 'package:doolanan/src/model/allgame_model.dart';
 import 'package:doolanan/utils/app_style.dart';
 import 'package:doolanan/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:doolanan/src/model/kategory_model.dart';
 
-class HomePages extends StatelessWidget {
+class HomePages extends StatefulWidget {
   const HomePages({super.key});
+
+  @override
+  State<HomePages> createState() => _HomePagesState();
+}
+
+class _HomePagesState extends State<HomePages> {
+  final SteamApiService steamApiService = SteamApiService('STEAMKEY');
+
+  late List<AllGameModel>? games = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    loadGames();
+  }
+
+  Future<void> loadGames() async {
+    try {
+      final List<AllGameModel> fetchGames = await steamApiService.getAllGames();
+      setState(() {
+        games = fetchGames;
+      });
+    } catch (e) {
+      print("Error load games : " + e.toString());
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -610,9 +639,36 @@ class HomePages extends StatelessWidget {
                               ),
                             ),
                           ),
-                          // Repeat the same structure for other items...
                         ],
                       ),
+                    ),
+                  ),
+                  Container(
+                    height: SizeConfig.screenHeightHalf2,
+                    width: SizeConfig.screenWidth,
+                    child: ListView.builder(
+                      itemCount: games!.length,
+                      itemBuilder: (context, index) {
+                        print('panjang games' + games!.length.toString());
+                        if (games == null) {
+                          return Text(
+                            "Game Kosong",
+                            style: TextStyle(color: white),
+                          );
+                        } else {
+                          return ListTile(
+                            leading: CircleAvatar(
+                                backgroundImage:
+                                    AssetImage('semuaAsset/gambar/bloon.png')),
+
+                            title: Text(
+                              games![index].name,
+                              style: TextStyle(color: white),
+                            ),
+                            // Add more details or actions if needed
+                          );
+                        }
+                      },
                     ),
                   ),
                 ],
